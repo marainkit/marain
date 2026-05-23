@@ -3,7 +3,7 @@
 
 _Second in a series. The first essay — [Engineered Defaults](https://jlesser.substack.com/p/engineered-defaults) — made the case that languages can be engineered to make particular kinds of thinking cognitively cheap. This one is about whether designed languages can actually spread far enough to do that work in the first place._
 
-![[assets/a-language.png]]
+![A Language for Everyone](assets/a-language.png)
 
 Esperanto and Hangul show up in the same breath when designed languages come up — which is to say: not all that often, but more than you’d guess if you don’t run in the kind of circles where it does. They show up paired because the framing is irresistible: two deliberately constructed linguistic projects, both internally well thought out, both launched into receptive moments. The framing is also a little misleading. They’re separated by four hundred and fifty years and they’re not the same kind of thing at all. But, you know, the pairing keeps happening, so let’s run with it.
 
@@ -23,7 +23,7 @@ Ludwik Zamenhof was a Polish ophthalmologist who grew up in Białystok, which at
 
 The grammar he designed is, taken on its own merits, sort of beautiful. Every noun ends in _-o_. Every adjective in _-a_. Verbs conjugate by tense alone, six suffixes total, no irregularities, no person-agreement, no gendered articles, no spelling exceptions. It is almost spectacularly regular. A motivated adult can get to functional reading in weeks. I keep saying “almost” because the phonology has one or two corners — the diacritical letters, the optional “h” replacement system — that bug people, but in context those are rounding errors. As constructed languages go, the engineering is solid.
 
-![[assets/esperanto-suffix.png]]
+![Esperanto suffixes](assets/esperanto-suffix.png)
 Figure from Jansen (2013), _Esperanto parts of speech in functional discourse grammar_, _Linguistics_ 51(3). © De Gruyter Mouton.
 
 It did **not** propagate. The reasons it didn’t are not flaws in the engineering, and the literature on this is reasonably consistent about what they are. Esperanto solved the wrong problem — or, more carefully, it tried to claim a slot that was being claimed in real time by someone else. Zamenhof’s bet was that an easier-to-learn second language would naturally win the international-auxiliary role. What actually fills that role is institutional power — the language of the empire, the lab, the trade hub, the army. English claimed the slot in the twentieth century not because it was destined to (in another timeline it’s French, or German, or some standardized commercial pidgin doing the work) but because the institutions that needed a cross-border lingua franca during the exact decades Esperanto was trying to grow happened to be running on English. By the time Esperanto had a real shot at the role, the role was taken. This isn’t an argument that auxiliary languages can’t propagate in principle. It’s an observation that the institutional window for one to claim the international slot is narrow, contingent on which incumbent gets there first, and effectively closed once the incumbent has momentum. Esperanto had no comparable backing. It had a community. It did not have a state, a standing army, a scientific establishment, a market.
@@ -34,7 +34,7 @@ The third miss is the one that matters for what I’m trying to get at. Esperant
 
 None of which is to say Esperanto is a failure in some absolute sense. It’s the most successful from-scratch designed language in modern history. There are even native speakers — children of Esperantist parents who grew up bilingual — which is wild… but the trajectory is a hobby trajectory, not a civilization-scale one, and that’s not what Zamenhof was building toward.
 
-![[assets/hangul-original.png]]
+![Hunminjeongeum Haerye](assets/hangul-original.png)
 
 _Image: Hunminjeongeum Haerye reprint, Government of Joseon, 1446. Source: Seoul National University Kyujanggak Institute for Korean Studies, via **[Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Hunminjeongeum_Haerye_03.jpg)**. Public domain._
 ## **By royal decree, 1443**
@@ -45,13 +45,13 @@ He wasn’t designing a language. Korean already existed. Everyone in his kingdo
 
 The design itself is one of those things that’s hard to credit until you sit with it. Each letter’s shape is derived from a stylized diagram of the speech organs that produce the corresponding sound. Velar consonants share a base shape that suggests the back of the tongue. Coronal consonants share a different base. Vowels are built from three primitives — a horizontal line, a vertical line, a dot — combined according to rules that mark front/back and rounding distinctions. The script encodes its own phonology graphically. If you’ve internalized the system you can guess at letters from how the sound feels in the mouth. (As an aside: this is not how alphabets normally work. Most alphabets are accidents of which earlier scripts they descend from. Hangul is one of the few that actually has a _theory_ in it.)
 
-![[assets/hangul-sounds.png]]
+![Hangul Sounds](assets/hangul-sounds.png)
 
 Figure adapted by Stephen Wright (2004) from an earlier French-language source; available at [wright-house.com](http://www.wright-house.com/korean/korean-linguistics-origins.html).
 
 Then those letters get composed into syllabic blocks — onset, vowel, optional coda, arranged into a roughly square unit that takes about the same visual real estate as a Chinese character. That last bit is a compatibility decision, and worth flagging, because it’s the kind of choice a less careful designer would not have made. Hangul could be slotted into mixed Hangul-Hanja text without disrupting the visual rhythm of the page. It didn’t pick a fight with the typesetting it had to live alongside.
 
-![[assets/hangul-words.png]]
+![Creating Hangul Words](assets/hangul-words.png)
 
 Figure adapted from Shim, Bae & Sung (2022), _Korean Tokenization for Beam Search Rescoring in Speech Recognition_ (arXiv:2203.03583).
 
