@@ -91,9 +91,9 @@ When Marain text is transmitted, stored, or processed as data, a single glyph is
 ```
 bit 0       [H]                   Herald (1 bit) — frame/reserved
 bits 1–3    [R₁][R₂][R₃]          Upper rail (3 bits) — context
-bits 4–12   [ 0][ 1][ 2]          Slate — the 3×3 glyph (9 bits)
-            [ 3][ 4][ 5]          ↓ this is glyph #341
-            [ 6][ 7][ 8]
+bits 4–12   [ 8][ 7][ 6]          Slate — the 3×3 glyph (9 bits)
+            [ 5][ 4][ 3]          ↓ this is glyph #341
+            [ 2][ 1][ 0]          LSB is bottom right
 bits 13–15  [R₄][R₅][R₆]          Lower rail (3 bits) — context
 ```
 
@@ -124,14 +124,14 @@ Glyph #121 is the phoneme */w/* — the only consonant explicitly assigned by Ba
 
 ### 1. **Pattern** (what it looks like)
 ```
-░ ░ ░
+░ ░ █
 █ █ █
 ░ ░ █
 ```
 
 ### 2. **Binary value** (what it is)
 
-Filled cells are at positions **3, 4, 5, 8**.
+Filled cells are at positions **3, 4, 5, 6, 8**.
 
 Read as a 9-bit binary value (position 0 is the MSB):
 ```
@@ -151,14 +151,14 @@ This is the canonical value from `encoding/docs/glyph-table.tsv`.
 | Type | Consonant phoneme |
 | Meaning | Bilabial approximant — /w/ sound |
 
-### 4. **Visual icon** (what it looks like when rendered)
+### 4. **Visual icon** (what it looks like when rendered) - rotated
 ![glyph 121 - w phoneme](/docs/assets/glyphs/121.png)
 
 ### 5. **Encoded packet** (how it travels)
 ```
 Herald + Upper Rail + Slate + Lower Rail = 16-bit packet
 
-[H][R₁R₂R₃][░░░█████░░█][R₄R₅R₆]
+[H][R₁R₂R₃][░ ░ █ █ █ █ ░ ░ █][R₄R₅R₆]
 [0][000]   [001111001]   [000]    (example with empty rails)
 
 Binary: 0000001111001000
@@ -177,12 +177,14 @@ When transmitted, this packet carries:
 
 Every Marain glyph can be understood in four ways:
 
-| Representation | Example | Purpose |
-|---|---|---|
-| **Visual Pattern** | `█░░/███/█░░` | How you draw it by hand or read it visually |
-| **Binary Value** | `001111001` (decimal 121) | How you compute it, encode it, transmit it |
-| **Semantic Name** | *w* (phoneme) | How you discuss it in language |
-| **Rendered Icon** | ![glyph 121 - w phoneme](/docs/assets/glyphs/121.png) | How fonts display it |
+| Representation     | Example                                               | Purpose                                     |
+| ------------------ | ----------------------------------------------------- | ------------------------------------------- |
+| **Visual Pattern** | `░ ░ █ / █ █ █ / ░ ░ █`                               | How you draw it by hand or read it visually |
+| **Binary Value**   | `001111001` (decimal 121)                             | How you compute it, encode it, transmit it  |
+| **Semantic Name**  | *w* (phoneme)                                         | How you discuss it in language              |
+| **Rendered Icon**  | ![glyph 121 - w phoneme](/docs/assets/glyphs/121.png) | How fonts display it                        |
+|                    |                                                       |                                             |
+|                    |                                                       |                                             |
 
 All four are the **same glyph** — different views of one thing.
 
@@ -191,7 +193,7 @@ All four are the **same glyph** — different views of one thing.
 ## Why This Matters
 
 These four representations are interchangeable. When you see:
-- `█░░/███/█░░` (pattern)
+- `█ ░ ░ / █ █ █ / █ ░ ░` (pattern)
 - `#121` or `001111001` (binary)
 - */w/* (semantic name)
 - ![glyph 121](../../docs/assets/glyphs/121.png) (rendered icon)
