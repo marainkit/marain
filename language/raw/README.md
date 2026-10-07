@@ -9,8 +9,8 @@ Original source files from [Marain Tools](https://marain-tools.netlify.app/). Ke
 | `marain-sentences.js` | 3 example sentences with word-by-word and idiomatic glosses |
 
 Canonical formats live in the parent directories:
-- [`../phonemes/alphabet.md`](../phonemes/alphabet.md) and [`../phonemes/alphabet.tsv`](../phonemes/alphabet.tsv)
+- [`../alphabet.md`](../alphabet.md) and [`../alphabet.tsv`](../alphabet.tsv)
 - [`../vocabulary.tsv`](../vocabulary.tsv) and [`../vocabulary.md`](../vocabulary.md)
-- [`../translations/sentences.md`](../translations/sentences.md)
+- [`../sentences.md`](../sentences.md)
 
-To regenerate the TSV files from these sources: `python3 direction/scripts/dict-to-tsv.py`
+To regenerate the TSV files from these sources: `python3 tools/scripts/dict-to-tsv.py`

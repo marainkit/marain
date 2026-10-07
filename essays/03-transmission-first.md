@@ -1,4 +1,4 @@
-![[00-header-W-eb-garamond-light.png]]
+![The letter W in EB Garamond](assets/03-header-w.png)
 The capital letter W, set in EB Garamond — Georg Duffner and Octavio Pardo's free, open-source revival (SIL Open Font License) of Claude Garamond's sixteenth-century types.
 # Transmission First
 ### Signal as the canonical form, glyph as a rendering choice
@@ -57,14 +57,14 @@ Two designed scripts: one for the blind, one for a fictional space civilization.
 
 The Marain glyph for **/w/** has been drawn into a number of free fonts that I can find on the internet. They all generally reflect the original version Banks drew in "A Few Notes on Marain".
 
-![[5-Ws-7.jpg]]
+![Five renderings of Marain /w/](assets/03-five-ws.jpg)
 
 
 All five are the same glyph[^fonts]. The ASCII boxes - the asterisks-and-dots I drew the glyph in up top - are obviously the crudest rendering of the lot, but none of them is more correct than any other. They are all reading from the same 9-bit value. They disagree about how to draw it. The drawing isn't what the glyph is.
 
 For comparison, here's the Marain **/w/** next to the Braille W:
 
-![[02-marain-w-vs-braille-w-2.png]]
+![Marain /w/ next to Braille W](assets/03-marain-w-vs-braille-w.png)
 
 Different cellular grid - 2x3 versus 3x3 - but the same **/w/** phoneme being rendered, and the two are mirror images of each other. Marain's bar sits on the left, Braille's on the right; reflect one across a vertical axis and, setting aside Marain's third column (it has no counterpart in the 2-wide Braille cell), they coincide. That leftover column is doing the indexing work, the bits that distinguish glyph 121 from its neighbors in the 512-state space. Strip it off, mirror what's left, and you're looking at a Braille W.
 
@@ -86,9 +86,9 @@ So the canonical signal is 9 bits. The wire format is 16. The difference - the 7
 
 The 7 extra bits are structured as six rail bits and one herald bit. The full packet:
 
-![[03-packet-anatomy 4.jpg]]
+![Anatomy of the 16-bit packet](assets/03-packet-anatomy.jpg)
 
-The herald is a single bit whose function the project hasn't decided yet. The rails are six bits of context - 64 possible states - meant to ride with the symbol rather than getting declared somewhere else in the document. What rides on the rails is still rattling around in my head (there's a design document called [channels.md](https://github.com/marainkit/marain/blob/main/encoding/docs/channels.md) that has the running thread, and as of now it carries no assigned meaning), but the candidates are things like: what kind of surface is this glyph rendering on (a document page, a status display, an alert on a ship's HUD), how urgent is the content, how certain is the speaker, what register is the language in. ASCII does not carry any of this. ASCII can't. There's no room.
+The herald is a single bit whose function the project hasn't decided yet. The rails are six bits of context - 64 possible states - meant to ride with the symbol rather than getting declared somewhere else in the document. What rides on the rails is still rattling around in my head (there's a design document called [channels.md](https://github.com/marainkit/marain/blob/main/spec/packet.md) that has the running thread, and as of now it carries no assigned meaning), but the candidates are things like: what kind of surface is this glyph rendering on (a document page, a status display, an alert on a ship's HUD), how urgent is the content, how certain is the speaker, what register is the language in. ASCII does not carry any of this. ASCII can't. There's no room.
 
 Now for the part that should flip the reader's intuition, because the naive read here is that 16 bits per symbol is double ASCII's 8 and therefore wasteful. The math says otherwise.
 
@@ -106,7 +106,7 @@ The natural-script answer to deep time is unbroken human transmission. Scripts s
 
 Hangul made it 600 years and survived three substrate transitions (brush-and-ink, movable type, digital encoding) because every transition had Korean speakers who knew Hangul and could re-author the script in the new medium without losing the underlying phonological logic. Each transition was a deliberate design pass by people who understood what they were preserving. The script survived because the chain didn't break.
 
-![[rosetta-stone.jpg]]
+![Hieroglyphs on the Rosetta Stone](assets/03-rosetta-stone.jpg)
 *Hieroglyphs on the Rosetta Stone*, engraved by James Basire for the Society of Antiquaries of London, 1810. Public domain, via [New York Public Library](https://nypl.getarchive.net/media/hieroglyphs-on-the-rosetta-stone-f1ec34).
 
 Egyptian hieroglyphs are the counterexample. The last fluent reader of hieroglyphs died sometime in the fourth century, after Coptic Christianity had displaced the older religious context the script depended on. The script became, in functional terms, a corpus of inscriptions on tombs and temples that nobody alive could read. From the death of the last reader to [Champollion](https://en.wikipedia.org/wiki/Jean-Fran%C3%A7ois_Champollion) publishing his decipherment in 1822 is right around fourteen hundred years. The script and artifacts existed that whole time. What didn't exist was the human transmission chain, and the recovery had to wait until someone happened to find a stone with the same text in three scripts, one of which (ancient Greek) was still legible to nineteenth-century scholars.
@@ -125,7 +125,7 @@ Let's start with what a recovered artifact gives you for free. Picture a far-fut
 
 A glyph corpus does not work this way. If you find a single inscription in a forgotten alphabet, what you have is one writing sample. The alphabet's full inventory isn't given to you - some letters might not appear at all - and the visual conventions are only as recoverable as the inscription's fidelity. The script depends on a tradition of visual judgment that the inscription can hint at but can't reconstitute. A finite cellular grid is more recoverable than a glyph corpus, in this specific sense. Not infinitely more, but measurably so.
 
-![[05-checkerboard-glyph.png]]
+![The Checkerboard glyph, #341](assets/03-checkerboard-glyph.png)
 
 What the artifact still won't give you is what any given state means. The bit-pattern for the checkerboard glyph might mean "noise" or "interference" or "maximum-intensity warning," but nothing in the pattern itself says so. That's the codebook problem proper, and on its own it's the same problem the Egyptian hieroglyphs presented to nineteenth-century philologists: a finite enumerable system with no Rosetta Stone in evidence and no surviving fluent reader.
 
@@ -185,14 +185,14 @@ _This essay was developed with AI-assisted research, outlining, and editing supp
 
 ## Sources and further reading
 
-- Iain M. Banks, ["A Few Notes on Marain"](../notes/source/a-few-notes-on-marain.md). The original technical essay.
+- Iain M. Banks, ["A Few Notes on Marain"](../sources/a-few-notes-on-marain.md). The original technical essay.
 - The history of W: the [OED entry](https://www.oed.com/dictionary/w_n) for the lexicographic story. Michelle P. Brown, *A Guide to Western Historical Scripts from Antiquity to 1600* (British Library, 1990) for the paleographic side, with plates from actual Insular and Carolingian manuscripts. The Pat O'Conner / Stewart Kellerman ["Why the 'w' is called a 'double u'"](https://grammarphobia.com/blog/2023/02/double-u-2.html) post for a free and well-sourced summary.
 - Louis Braille's original publication: *Procédé pour écrire les paroles, la musique et le plain-chant au moyen de points* (1829). The Unicode Braille block `U+2800`-`U+28FF` for the digital substrate.
 - On Hangul, the standard English source is the Lee and Ramsey edition of *Hunminjeongeum*. On Egyptian decipherment, Andrew Robinson's *Cracking the Egyptian Code: The Revolutionary Life of Jean-François Champollion* (Oxford, 2012) is the readable single-volume biography.
 - Raposo, Joe (music), and Jerry Juhl (lyrics). "The National Association of 'W' Lovers." Performed by Bert (Frank Oz). *Sesame Street*, Episode 0366, 1971. Released on *The Muppet Alphabet Album* (Columbia Records, CC 25503, 1971), track 23. Recording sessions: September 20-24, 1971 (per *Jim Henson's Red Book*). Publishing rights: Instructional Children's Music, Inc. ©1973. [YouTube](https://www.youtube.com/watch?v=XJcdpKYIFKs).
 
 **Project documentation**
-- [`encoding/`](https://github.com/marainkit/marain/tree/main/encoding) - the canonical spec for the slate, packet, rails, and herald.
-- [`encoding/docs/invariant-glyphs.md`](https://github.com/marainkit/marain/blob/main/encoding/docs/invariant-glyphs.md) - the eight rotation/mirror-invariant glyphs and their reserved semantic loads.
-- [`direction/encoding-density-and-packets.md`](https://github.com/marainkit/marain/blob/main/direction/encoding-density-and-packets.md) - the density argument worked out in more technical detail.
+- [`spec/`](https://github.com/marainkit/marain/tree/main/spec) - the spec for the slate, packet, rails, and herald.
+- [`spec/grid.md`](https://github.com/marainkit/marain/blob/main/spec/grid.md) - the eight rotation/mirror-invariant glyphs and their reserved semantic loads.
+- [`spec/packet.md`](https://github.com/marainkit/marain/blob/main/spec/packet.md) - the packet and its density, worked out in more technical detail (see the corrections note in the essays index).
 - [marainkit.github.io/marain](https://marainkit.github.io/marain/) - current state of the glyph table - I gotta figure out the bit order question because it's really doing my head in.

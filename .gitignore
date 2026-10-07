@@ -1,25 +1,31 @@
-# exclude third-party sources & generated assets
+# Third-party / generated assets not for redistribution
 docs/assets/*.svg
-display/fonts/examples
-display/themes/culture/fonts
+# MarainBanks font: (c) Tom Cully, all rights reserved
+docs/marain-banks/
+# reference fonts, various licences
+tools/font/examples/
+tools/font/.venv/
+themes/culture/fonts/
 
-# Claude Code project settings
-.claude/settings.local.json
-.claude/worktrees/
-.claude/plans/
-.claude/scheduled_tasks.json
+# Copyrighted source text — local only
+books/
+sources/novel-extractions/
+
+# Drafts and working files
+OUTPUTS/
+CLEANUP-AUDIT.md
+
+# Local tool config (may contain credentials)
+opencode.jsonc
 .claude/
 .obsidian/
+.zed/
 copilot/
+CLAUDE.md
+**/CLAUDE.md
+
+# OS / language noise
+.DS_Store
 __pycache__/
 node_modules/
-.DS_Store
 .venv/
-.zed
-
-books
-
-CLAUDE.md
-skill/CLAUDE.md
-language/CLAUDE.md
-OUTPUTS

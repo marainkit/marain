@@ -1,7 +1,7 @@
 # Engineered Defaults
 ### Banks, the Culture, and the mathematics of a designed language
 
-![Marain Font by TTFTCUTS](../notes/assets/marain-TTFTCUTS-font.png)
+![Marain Font by TTFTCUTS](../research/assets/marain-TTFTCUTS-font.png)
 
 *Marain glyphs rendered in TTFTCUTS' font. © TTFTCUTS — [Marain font](https://fontstruct.com/fontstructions/show/1446008/marain-5)*
 
@@ -21,7 +21,7 @@ Banks' technical essay — *"A Few Notes on Marain"* — is short. It runs maybe
 
 Each Marain symbol is a 3×3 binary grid. Nine cells, each filled or empty. There are 2⁹ = 512 possible states, indexed 0 through 511. This is both the visual form (a glyph you can draw) and the transmitted form (a 9-bit number you can send as bits over a tightbeam laser). The same symbol carved in stone, fired across interstellar space, woven into fabric, or drawn on skin is the same number underneath.
 
-![Banks' figures 1–3 from "A Few Notes on Marain"](../notes/assets/marain-a-few-notes-figures-1-3.png)
+![Banks' figures 1–3 from "A Few Notes on Marain"](../sources/assets/marain-a-few-notes-figures-1-3.png)
 
 *Figures 1–3 from Banks' essay. Figure 1 is glyph #1 — the number 1, a single cell at the top-left. Figures 2 and 3 are #0 and #511 — the empty grid and the full grid, the lowest and highest representable values. © Iain M. Banks*
 
@@ -133,7 +133,7 @@ That is enough to take the design seriously.
 ## Sources and further reading
 
 **Primary source**
-- Iain M. Banks, ["A Few Notes on Marain"](../notes/source/a-few-notes-on-marain.md). The original technical essay. ~800 words.
+- Iain M. Banks, ["A Few Notes on Marain"](../sources/a-few-notes-on-marain.md). The original technical essay. ~800 words.
 
 **Sapir-Whorf empirical literature**
 - Winawer, J., Witthoft, N., Frank, M. C., Wu, L., Wade, A. R., & Boroditsky, L. (2007). Russian blues reveal effects of language on color discrimination. *PNAS*, 104(19), 7780–7785.
@@ -142,6 +142,6 @@ That is enough to take the design seriously.
 - Boroditsky, L., Schmidt, L. A., & Phillips, W. (2003). Sex, syntax, and semantics. In D. Gentner & S. Goldin-Meadow (Eds.), *Language in Mind*.
 
 **Project documentation**
-- [`encoding/docs/invariant-glyphs.md`](../encoding/docs/invariant-glyphs.md) — full derivation of the 8 invariant glyphs and their semantic pairs.
-- [`notes/sapir-whorf.md`](../notes/sapir-whorf.md) — extended treatment of how the Sapir-Whorf evidence informs the project's design decisions.
-- [`notes/rationale.md`](../notes/rationale.md) — the project's broader philosophical position, including which claims are speculative and which are settled.
+- [`spec/grid.md`](../spec/grid.md) — the 8 invariant glyphs, their semantic pairs and reservation policy.
+- [`research/sapir-whorf.md`](../research/sapir-whorf.md) — extended treatment of how the Sapir-Whorf evidence informs the project's design decisions.
+- [`research/rationale.md`](../research/rationale.md) — the project's broader philosophical position, including which claims are speculative and which are settled.

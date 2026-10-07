@@ -128,5 +128,5 @@ _This essay was developed with AI-assisted editing and revision. The underlying 
 
 **Project documentation**
 
-- `direction.md` — project scope and the substrate-content prioritization this essay defends.
-- `language/README.md` — the content work, with explicit notes on which parts are canonical, inferred, or project decisions.
+- [`spec/README.md`](../spec/README.md) — design principles, including the substrate-over-content priority this essay defends.
+- [`language/README.md`](../language/README.md) — the content work, with notes on which parts are canonical, inferred, or project decisions.

@@ -1,61 +1,43 @@
 # language/
 
-Linguistic layer for marainkit — phoneme set, grammar, and translated content.
+The linguistic layer (Layer 2 in [`../spec/architecture.md`](../spec/architecture.md)): phonemes, vocabulary, example sentences.
 
-Marain is a **constructed language engineered by the Culture's Minds** to exploit the Sapir-Whorf hypothesis: language shapes society. It is egalitarian, non-hierarchical, and non-dominant by design.
-
-> **Status:** Early spec. Canonical properties are documented. Phoneme set, grammar rules, and tonal encoding are not yet defined.
+> **Status:** early. The data here is community-derived ([Marain Tools](https://marain-tools.netlify.app/)) and **not yet reconciled** with Banks' glyph values or marainkit's encoding. Grammar, tone and the phoneme → glyph mapping are open.
 
 ---
 
-## Canonical properties
+## What canon gives us
 
-- Written in a **3×3 matrix** of binary cells (each filled or empty) — 9 bits, 512 possible glyphs
-- Glyphs are **readable in any orientation** — no privileged direction
-- Single **gender-neutral third-person pronoun**
-- Structured to reduce ambiguity and encode Culture values
-- Used galaxy-wide as a de facto *lingua franca*
+- A **32-letter alphabet**, shown in Banks' figure. /w/ is the first letter `[canonical]`.
+- Rotated letters stand for related sounds, and the system aims to reproduce any language a humanoid can speak `[canonical]`.
+- **One gender-neutral personal pronoun** (*The Player of Games*) `[canonical]`.
+- No published grammar, tones or vocabulary.
 
-This project operates entirely at **M1** (basic nonary Marain, readable by all Culture citizens).
+This project works only at **M1**, standard nonary Marain.
 
----
+## Contents
 
-## Key documents
+| File | What it is |
+|------|------------|
+| [alphabet.md](alphabet.md) · [alphabet.tsv](alphabet.tsv) | The 32 letters with IPA, letter names and Marain Tools' sort order (`w` first) |
+| [vocabulary.md](vocabulary.md) · [vocabulary.tsv](vocabulary.tsv) | 430-word community vocabulary |
+| [sentences.md](sentences.md) | Three example sentences with glosses |
+| [raw/](raw/) | The original Marain Tools JavaScript source files |
 
-| Document | Contents |
-|----------|----------|
-| [`direction.md`](direction.md) | Full subproject direction — prior art, encryption tiers, priority queue |
-| [`docs/vocabulary.md`](docs/vocabulary.md) | 430-word community vocabulary (Marain Tools) — format notes and DB import |
-| [`vocabulary/vocabulary.tsv`](vocabulary/vocabulary.tsv) | Vocabulary data in TSV — canonical format for database import |
-| [`docs/sanskrit-marain-dictionary-research.md`](docs/sanskrit-marain-dictionary-research.md) | Deep research: Sanskrit as donor language — consciousness terms, Navarasa, structural vocabulary, proposed Sanskrit names for invariant glyphs |
-| [`phonemes/alphabet.md`](phonemes/alphabet.md) | 32-letter phoneme inventory with IPA and Marain lexorder |
-| [`translations/sentences.md`](translations/sentences.md) | Example sentences with word-by-word and idiomatic glosses |
+Phoneme → glyph values are in [`../spec/glyph-index.md`](../spec/glyph-index.md). There are two competing readings.
 
 ---
 
-## Priority queue
+## Priorities
 
-1. Phoneme set definition (abjad structure)
-2. Grammar rules (word order, cases, pronouns)
-3. Tonal encoding spec (bridge to `encoding/` layer)
+1. **Settle the phoneme → glyph values** (blocked: see [`../spec/decisions.md`](../spec/decisions.md))
+2. Grammar: word order, cases, pronouns
+3. Tone, if any: whether, how many, and how it's encoded (most likely in the rails)
 
-**Column B (phoneme picker UI) is a research track, not active backlog.** It depends on all three items above, plus several unsettled upstream questions: phoneme inventory authority, glyph assignment policy, tone encoding, register semantics, and vocabulary provenance. It is worth pursuing but is not close to actionable. See [`notes/tracks.md`](../notes/tracks.md).
+**Column B** (composing in phonemes with live bit output) is a research track, not active backlog. It depends on all three priorities above, plus register semantics and vocabulary provenance.
 
----
+## Guard against your own defaults
 
-## Structure
+Esperanto is the warning case. It aimed at neutrality but scores about 75% feature overlap with European languages against a 54% world average, because Zamenhof drew on the languages he knew. A designed language reproduces its designer's languages unless it actively resists them. So phoneme, grammar and vocabulary work here needs a **documented** counterweight: non-Indo-European phonemic features, word orders other than SVO, roots that aren't transparently European.
 
-```
-language/
-├── docs/
-│   ├── vocabulary.md                   ← vocabulary description + format notes
-│   └── sanskrit-marain-dictionary-research.md  ← Sanskrit donor language research
-├── vocabulary/
-│   └── vocabulary.tsv                  ← 430-word community vocabulary (TSV)
-├── phonemes/                           ← phoneme set definitions
-│   ├── alphabet.md                     ← 32-letter inventory in Marain lexorder
-│   └── alphabet.tsv                    ← machine-readable
-├── translations/
-│   └── sentences.md                    ← example sentences with glosses
-└── raw/                                ← JS source files from Marain Tools
-```
+The community's lean toward Sanskrit and Chinese sources reflects that instinct and Banks' anti-Eurocentrism. Make it an explicit requirement rather than a matter of taste. See [`../research/esperanto-and-hangul.md`](../research/esperanto-and-hangul.md) and [`../research/sanskrit.md`](../research/sanskrit.md).
