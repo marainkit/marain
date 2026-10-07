@@ -16,76 +16,76 @@ Pattern notation: `█` = filled (1) · `░` = empty (0)
 
 ---
 
-| # | Name | Glyph | Binary | Meaning(s) | Proposed by | Confidence |
-|--:|------|-------|--------|-----------|-------------|------------|
-| 0 | "Empty", *líng*, *nuul* | `░░░`<br>`░░░`<br>`░░░` | `000000000` | Silence · null · (word) space · zero · octal digit 0 | marainkit[^1] | `decided` |
-| 1 | *yī* | `█░░`<br>`░░░`<br>`░░░` | `100000000` | Octal digit 1 | Banks[^2] (implied)[^3] | `decided` |
-| 2 | */ay/* | `░█░`<br>`░░░`<br>`░░░` | `010000000` | Phoneme | Banks[^2] | `provisional` |
-| 3 | *èr* | `██░`<br>`░░░`<br>`░░░` | `110000000` | Octal digit 2 | marainkit[^10] | `decided` |
-| 5 | *paa* | `█░█`<br>`░░░`<br>`░░░` | `101000000` | Fear 😨 | zakalwe2040[^9] | `community` |
-| 7 | *sān* | `███`<br>`░░░`<br>`░░░` | `111000000` | Octal digit 3 | marainkit[^10] | `decided` |
-| 13 | *bay* | `█░█`<br>`█░░`<br>`░░░` | `101100000` | Sadness 😢 | zakalwe2040[^9] | `community` |
-| 15 | *sì* | `███`<br>`█░░`<br>`░░░` | `111100000` | Octal digit 4 | marainkit[^10] | `decided` |
-| 16 | "Point" | `░░░`<br>`░█░`<br>`░░░` | `000010000` | Singularity · decimal point | marainkit[^1] |  `decided` |
-| 21 | *gang* | `█░█`<br>`░█░`<br>`░░░` | `101010000` | Affection 😘 | zakalwe2040[^9] | `community` |
-| 31 | *wǔ* | `███`<br>`██░`<br>`░░░` | `111110000` | Octal digit 5 | marainkit[^10] | `decided` |
-| 32 | */eh/* | `░░░`<br>`░░█`<br>`░░░` | `000001000` | Phoneme | Banks[^2] | `provisional` |
-| 45 | *buz* | `█░█`<br>`█░█`<br>`░░░` | `101101000` | Overwhelmed 😭 | zakalwe2040[^9] | `community` |
-| 50 | */ee/* | `░█░`<br>`░██`<br>`░░░` | `010011000` | Phoneme | Banks[^2] | `provisional` |
-| 56 | */f/* | `░░░`<br>`███`<br>`░░░` | `000111000` | Phoneme | Banks[^2] | `provisional` |
-| 57 | */sh/* | `█░░`<br>`███`<br>`░░░` | `100111000` | Phoneme | Banks[^2] | `provisional` |
-| 60 | */tch/* | `░░█`<br>`███`<br>`░░░` | `001111000` | Phoneme | Banks[^2] | `provisional` |
-| 62 | *pil* | `░██`<br>`███`<br>`░░░` | `011111000` | Fatigue 🥱 | zakalwe2040[^9] | `community` |
-| 63 | *liù* | `███`<br>`███`<br>`░░░` | `111111000` | Octal digit 6 | marainkit[^10] | `decided` |
-| 84 | */ih/* | `░░█`<br>`░█░`<br>`█░░` | `001010100` | Phoneme | Banks[^2] | `provisional` |
-| 85 | *shaa* | `█░█`<br>`░█░`<br>`█░░` | `101010100` | Laughter 🤣 | zakalwe2040[^9] | `community` |
-| 118 | */oh/* | `░██`<br>`░██`<br>`█░░` | `011011100` | Phoneme | Banks[^2] | `provisional` |
-| 120 | */g/* | `░░░`<br>`███`<br>`█░░` | `000111100` | Phoneme | Banks[^2] | `provisional` |
-| 121 | */w/* | `█░░`<br>`███`<br>`█░░` | `100111100` | Phoneme | Banks[^2] (canonical) | `confirmed` |
-| 127 | *qī* | `███`<br>`███`<br>`█░░` | `111111100` | Octal digit 7 | marainkit[^10] | `decided` |
-| 149 | *ging* | `█░█`<br>`░█░`<br>`░█░` | `101010010` | Sympathy 🥺 | zakalwe2040[^9] | `community` |
-| 168 | */t/* | `░░░`<br>`█░█`<br>`░█░` | `000101010` | Phoneme | Banks[^2] | `provisional` |
-| 170 | "Diamond" | `░█░`<br>`█░█`<br>`░█░` | `010101010` | Danger · hazard | marainkit[^1] | `decided` |
-| 174 | */ch/* | `░██`<br>`█░█`<br>`░█░` | `011101010` | Phoneme (as in Scottish 'loch') | Banks[^2] | `provisional` |
-| 175 | *hub* | `███`<br>`█░█`<br>`░█░` | `111101010` | Love 💛 | zakalwe2040[^9] | `community` |
-| 181 | *shacha* | `█░█`<br>`░██`<br>`░█░` | `101011010` | Greetings · peace · hello · bye 🖖 | zakalwe2040[^9] | `community` |
-| 184 | */y/* | `░░░`<br>`███`<br>`░█░` | `000111010` | Phoneme | Banks[^2] | `provisional` |
-| 186 | "Cross" | `░█░`<br>`███`<br>`░█░` | `010111010` | Alert · stop | marainkit[^1] | `decided` |
-| 214 | */s/* | `░██`<br>`░█░`<br>`██░` | `011010110` | Phoneme | Banks[^2] | `provisional` |
-| 220 | *wun* | `░░█`<br>`██░`<br>`██░` | `001110110` | Warmth 💕 | zakalwe2040[^9] | `community` |
-| 221 | *zang* | `█░█`<br>`██░`<br>`██░` | `101110110` | Surprise 😲 | zakalwe2040[^9] | `community` |
-| 253 | *shuu* | `█░█`<br>`███`<br>`██░` | `101111110` | Infatuation 😍 | zakalwe2040[^9] | `community` |
-| 266 | *samara* | `░█░`<br>`█░░`<br>`░░█` | `010100001` | Fascination · logic understood 🤨 | zakalwe2040[^9] | `community` |
-| 273 | */uh/* | `█░░`<br>`░█░`<br>`░░█` | `100010001` | Phoneme | Banks[^2] | `provisional` |
-| 277 | *mar* | `█░█`<br>`░█░`<br>`░░█` | `101010001` | Joy 😂 | zakalwe2040[^9] | `community` |
-| 286 | */ng/* | `░██`<br>`██░`<br>`░░█` | `011110001` | Phoneme | marainkit[^12] | `decided` |
-| 292 | */r/* | `░░█`<br>`░░█`<br>`░░█` | `001001001` | Phoneme | Banks[^2] | `provisional` |
-| 295 | */n/* | `███`<br>`░░█`<br>`░░█` | `111001001` | Phoneme | Banks[^2] | `provisional` |
-| 309 | *hoo* | `█░█`<br>`░██`<br>`░░█` | `101011001` | Happiness 😊 | zakalwe2040[^9] | `community` |
-| 312 | */k/* | `░░░`<br>`███`<br>`░░█` | `000111001` | Phoneme | Banks[^2] | `provisional` |
-| 325 | "Corners" | `█░█`<br>`░░░`<br>`█░█` | `101000101` | Boundary · perimeter · limit | marainkit[^1] | `decided` |
-| 334 | *fin* | `░██`<br>`█░░`<br>`█░█` | `011100101` | Anger 😡 | zakalwe2040[^9] | `community` |
-| 338 | *yam* | `░█░`<br>`░█░`<br>`█░█` | `010010101` | Hope 🙏 | zakalwe2040[^9] | `community` |
-| 341 | "Checkerboard" | `█░█`<br>`░█░`<br>`█░█` | `101010101` | Noise · near-maximum intensity · interference | marainkit[^1] | `decided` |
-| 365 | *shii* | `█░█`<br>`█░█`<br>`█░█` | `101101101` | Synchronicity 😉 | zakalwe2040[^9] | `community` |
-| 367 | */v/* | `███`<br>`█░█`<br>`█░█` | `111101101` | Phoneme | Banks[^2] | `provisional` |
-| 371 | */oo/* | `██░`<br>`░██`<br>`█░█` | `110011101` | Phoneme | Banks[^2] | `provisional` |
-| 384 | */z/* | `░░░`<br>`░░░`<br>`░██` | `000000011` | Phoneme | Banks[^2] | `provisional` |
-| 405 | *shai* | `█░█`<br>`░█░`<br>`░██` | `101010011` | Agreement 👍 | zakalwe2040[^9] | `community` |
-| 431 | */je/* | `███`<br>`█░█`<br>`░██` | `111101011` | Phoneme | Banks[^2] | `provisional` |
-| 432 | */b/* | `░░░`<br>`░██`<br>`░██` | `000011011` | Phoneme | Banks[^2] | `provisional` |
-| 437 | *zing* | `█░█`<br>`░██`<br>`░██` | `101011011` | Positivity ✨ | zakalwe2040[^9] | `community` |
-| 447 | */th/* | `███`<br>`███`<br>`░██` | `111111011` | Phoneme | marainkit[^12] | `decided` |
-| 456 | */ah/* | `░░░`<br>`█░░`<br>`███` | `000100111` | Phoneme | Banks[^2] | `provisional` |
-| 457 | */m/* | `█░░`<br>`█░░`<br>`███` | `100100111` | Phoneme | Banks[^2] | `provisional` |
-| 459 | */p/* | `██░`<br>`█░░`<br>`███` | `110100111` | Phoneme | Banks[^2] | `provisional` |
-| 469 | */ll/* | `█░█`<br>`░█░`<br>`███` | `101010111` | Phoneme | Banks[^2] | `provisional` |
-| 480 | */d/* | `░░░`<br>`░░█`<br>`███` | `000001111` | Phoneme | Banks[^2] | `provisional` |
-| 484 | */l/* | `░░█`<br>`░░█`<br>`███` | `001001111` | Phoneme | Banks[^2] | `provisional` |
-| 493 | */h/* | `█░█`<br>`█░█`<br>`███` | `101101111` | Phoneme | Banks[^2] | `provisional` |
-| 495 | "Frame" | `███`<br>`█░█`<br>`███` | `111101111` | Enclosure · bracket · container · structural boundary | marainkit[^1] | `decided` |
-| 501 | *lang* | `█░█`<br>`░██`<br>`███` | `101011111` | Romance 🥰 | zakalwe2040[^9] | `community` |
-| 511 | "Full" | `███`<br>`███`<br>`███` | `111111111` | Full stop · header marker · maximum · critical | marainkit[^1] | `decided` |
+|   # | Name                    | Glyph                   | Binary      | Meaning(s)                                            | Proposed by             | Confidence    |
+| --: | ----------------------- | ----------------------- | ----------- | ----------------------------------------------------- | ----------------------- | ------------- |
+|   0 | "Empty", *líng*, *nuul* | `░░░`<br>`░░░`<br>`░░░` | `000000000` | Silence · null · (word) space · zero · octal digit 0  | marainkit[^1]           | `decided`     |
+|   1 | *yī*                    | `█░░`<br>`░░░`<br>`░░░` | `100000000` | Octal digit 1                                         | Banks[^2] (implied)[^3] | `decided`     |
+|   2 | */ay/*                  | `░█░`<br>`░░░`<br>`░░░` | `010000000` | Phoneme                                               | Banks[^2]               | `provisional` |
+|   3 | *èr*                    | `██░`<br>`░░░`<br>`░░░` | `110000000` | Octal digit 2                                         | marainkit[^10]          | `decided`     |
+|   5 | *paa*                   | `█░█`<br>`░░░`<br>`░░░` | `101000000` | Fear 😨                                               | zakalwe2040[^9]         | `community`   |
+|   7 | *sān*                   | `███`<br>`░░░`<br>`░░░` | `111000000` | Octal digit 3                                         | marainkit[^10]          | `decided`     |
+|  13 | *bay*                   | `█░█`<br>`█░░`<br>`░░░` | `101100000` | Sadness 😢                                            | zakalwe2040[^9]         | `community`   |
+|  15 | *sì*                    | `███`<br>`█░░`<br>`░░░` | `111100000` | Octal digit 4                                         | marainkit[^10]          | `decided`     |
+|  16 | "Point"                 | `░░░`<br>`░█░`<br>`░░░` | `000010000` | Singularity · decimal point                           | marainkit[^1]           | `decided`     |
+|  21 | *gang*                  | `█░█`<br>`░█░`<br>`░░░` | `101010000` | Affection 😘                                          | zakalwe2040[^9]         | `community`   |
+|  31 | *wǔ*                    | `███`<br>`██░`<br>`░░░` | `111110000` | Octal digit 5                                         | marainkit[^10]          | `decided`     |
+|  32 | */eh/*                  | `░░░`<br>`░░█`<br>`░░░` | `000001000` | Phoneme                                               | Banks[^2]               | `provisional` |
+|  45 | *buz*                   | `█░█`<br>`█░█`<br>`░░░` | `101101000` | Overwhelmed 😭                                        | zakalwe2040[^9]         | `community`   |
+|  50 | */ee/*                  | `░█░`<br>`░██`<br>`░░░` | `010011000` | Phoneme                                               | Banks[^2]               | `provisional` |
+|  56 | */f/*                   | `░░░`<br>`███`<br>`░░░` | `000111000` | Phoneme                                               | Banks[^2]               | `provisional` |
+|  57 | */sh/*                  | `█░░`<br>`███`<br>`░░░` | `100111000` | Phoneme                                               | Banks[^2]               | `provisional` |
+|  60 | */tch/*                 | `░░█`<br>`███`<br>`░░░` | `001111000` | Phoneme                                               | Banks[^2]               | `provisional` |
+|  62 | *pil*                   | `░██`<br>`███`<br>`░░░` | `011111000` | Fatigue 🥱                                            | zakalwe2040[^9]         | `community`   |
+|  63 | *liù*                   | `███`<br>`███`<br>`░░░` | `111111000` | Octal digit 6                                         | marainkit[^10]          | `decided`     |
+|  84 | */ih/*                  | `░░█`<br>`░█░`<br>`█░░` | `001010100` | Phoneme                                               | Banks[^2]               | `provisional` |
+|  85 | *shaa*                  | `█░█`<br>`░█░`<br>`█░░` | `101010100` | Laughter 🤣                                           | zakalwe2040[^9]         | `community`   |
+| 118 | */oh/*                  | `░██`<br>`░██`<br>`█░░` | `011011100` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 120 | */g/*                   | `░░░`<br>`███`<br>`█░░` | `000111100` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 121 | */w/*                   | `█░░`<br>`███`<br>`█░░` | `100111100` | Phoneme                                               | Banks[^2] (canonical)   | `confirmed`   |
+| 127 | *qī*                    | `███`<br>`███`<br>`█░░` | `111111100` | Octal digit 7                                         | marainkit[^10]          | `decided`     |
+| 149 | *ging*                  | `█░█`<br>`░█░`<br>`░█░` | `101010010` | Sympathy 🥺                                           | zakalwe2040[^9]         | `community`   |
+| 168 | */t/*                   | `░░░`<br>`█░█`<br>`░█░` | `000101010` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 170 | "Diamond"               | `░█░`<br>`█░█`<br>`░█░` | `010101010` | Danger · hazard                                       | marainkit[^1]           | `decided`     |
+| 174 | */ch/*                  | `░██`<br>`█░█`<br>`░█░` | `011101010` | Phoneme (as in Scottish 'loch')                       | Banks[^2]               | `provisional` |
+| 175 | *hub*                   | `███`<br>`█░█`<br>`░█░` | `111101010` | Love 💛                                               | zakalwe2040[^9]         | `community`   |
+| 181 | *shacha*                | `█░█`<br>`░██`<br>`░█░` | `101011010` | Greetings · peace · hello · bye 🖖                    | zakalwe2040[^9]         | `community`   |
+| 184 | */y/*                   | `░░░`<br>`███`<br>`░█░` | `000111010` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 186 | "Cross"                 | `░█░`<br>`███`<br>`░█░` | `010111010` | Alert · stop                                          | marainkit[^1]           | `decided`     |
+| 214 | */s/*                   | `░██`<br>`░█░`<br>`██░` | `011010110` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 220 | *wun*                   | `░░█`<br>`██░`<br>`██░` | `001110110` | Warmth 💕                                             | zakalwe2040[^9]         | `community`   |
+| 221 | *zang*                  | `█░█`<br>`██░`<br>`██░` | `101110110` | Surprise 😲                                           | zakalwe2040[^9]         | `community`   |
+| 253 | *shuu*                  | `█░█`<br>`███`<br>`██░` | `101111110` | Infatuation 😍                                        | zakalwe2040[^9]         | `community`   |
+| 266 | *samara*                | `░█░`<br>`█░░`<br>`░░█` | `010100001` | Fascination · logic understood 🤨                     | zakalwe2040[^9]         | `community`   |
+| 273 | */uh/*                  | `█░░`<br>`░█░`<br>`░░█` | `100010001` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 277 | *mar*                   | `█░█`<br>`░█░`<br>`░░█` | `101010001` | Joy 😂                                                | zakalwe2040[^9]         | `community`   |
+| 286 | */ng/*                  | `░██`<br>`██░`<br>`░░█` | `011110001` | Phoneme                                               | marainkit[^12]          | `decided`     |
+| 292 | */r/*                   | `░░█`<br>`░░█`<br>`░░█` | `001001001` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 295 | */n/*                   | `███`<br>`░░█`<br>`░░█` | `111001001` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 309 | *hoo*                   | `█░█`<br>`░██`<br>`░░█` | `101011001` | Happiness 😊                                          | zakalwe2040[^9]         | `community`   |
+| 312 | */k/*                   | `░░░`<br>`███`<br>`░░█` | `000111001` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 325 | "Corners"               | `█░█`<br>`░░░`<br>`█░█` | `101000101` | Boundary · perimeter · limit                          | marainkit[^1]           | `decided`     |
+| 334 | *fin*                   | `░██`<br>`█░░`<br>`█░█` | `011100101` | Anger 😡                                              | zakalwe2040[^9]         | `community`   |
+| 338 | *yam*                   | `░█░`<br>`░█░`<br>`█░█` | `010010101` | Hope 🙏                                               | zakalwe2040[^9]         | `community`   |
+| 341 | "Checkerboard"          | `█░█`<br>`░█░`<br>`█░█` | `101010101` | Noise · near-maximum intensity · interference         | marainkit[^1]           | `decided`     |
+| 365 | *shii*                  | `█░█`<br>`█░█`<br>`█░█` | `101101101` | Synchronicity 😉                                      | zakalwe2040[^9]         | `community`   |
+| 367 | */v/*                   | `███`<br>`█░█`<br>`█░█` | `111101101` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 371 | */oo/*                  | `██░`<br>`░██`<br>`█░█` | `110011101` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 384 | */z/*                   | `░░░`<br>`░░░`<br>`░██` | `000000011` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 405 | *shai*                  | `█░█`<br>`░█░`<br>`░██` | `101010011` | Agreement 👍                                          | zakalwe2040[^9]         | `community`   |
+| 431 | */je/*                  | `███`<br>`█░█`<br>`░██` | `111101011` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 432 | */b/*                   | `░░░`<br>`░██`<br>`░██` | `000011011` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 437 | *zing*                  | `█░█`<br>`░██`<br>`░██` | `101011011` | Positivity ✨                                          | zakalwe2040[^9]         | `community`   |
+| 447 | */th/*                  | `███`<br>`███`<br>`░██` | `111111011` | Phoneme                                               | marainkit[^12]          | `decided`     |
+| 456 | */ah/*                  | `░░░`<br>`█░░`<br>`███` | `000100111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 457 | */m/*                   | `█░░`<br>`█░░`<br>`███` | `100100111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 459 | */p/*                   | `██░`<br>`█░░`<br>`███` | `110100111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 469 | */ll/*                  | `█░█`<br>`░█░`<br>`███` | `101010111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 480 | */d/*                   | `░░░`<br>`░░█`<br>`███` | `000001111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 484 | */l/*                   | `░░█`<br>`░░█`<br>`███` | `001001111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 493 | */h/*                   | `█░█`<br>`█░█`<br>`███` | `101101111` | Phoneme                                               | Banks[^2]               | `provisional` |
+| 495 | "Frame"                 | `███`<br>`█░█`<br>`███` | `111101111` | Enclosure · bracket · container · structural boundary | marainkit[^1]           | `decided`     |
+| 501 | *lang*                  | `█░█`<br>`░██`<br>`███` | `101011111` | Romance 🥰                                            | zakalwe2040[^9]         | `community`   |
+| 511 | "Full"                  | `███`<br>`███`<br>`███` | `111111111` | Full stop · header marker · maximum · critical        | marainkit[^1]           | `decided`     |
 
 ## Reserved
 

@@ -8,8 +8,8 @@ These are working drafts. They are written for a general intellectually-curious 
 
 1. **[Engineered Defaults](01-engineered-defaults.md)** — Banks' design theory, the geometry of the 3×3 grid, and the Sapir-Whorf evidence behind making egalitarianism cognitively cheap.
 2. [**Substrate vs Content**](02-substrate-vs-content) — what Esperanto and Hangul tell us about whether designed languages survive at all, and what kind of design choices help.
-3. *(forthcoming)* **Transmission First** — the inversion at the heart of Marain's writing system: signal as primary, glyph as rendering, and what that means for substrate independence over very long timescales.
-4. *(forthcoming)* **A Working Grammar** — the parts of the spec solid enough to actually build with, and the parts where this project has had to make decisions Banks left open.
+3. **[Transmission First](03-transmission-first.md)** — the inversion at the heart of Marain's writing system: signal as primary, glyph as rendering, and what that means for substrate independence over very long timescales.
+4. **[A Working Grammar](04-a-working-grammar.md)** — the parts of the spec solid enough to actually build with, and the parts where this project has had to make decisions Banks left open.
 
 ## Conventions
 
