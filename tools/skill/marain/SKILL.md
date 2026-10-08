@@ -21,7 +21,7 @@ Before any technical work, read:
 Map:
 - `spec/` holds the normative docs: grid and bit order, invariants, numerals, glyph table, packet, rendering, display
 - `language/` holds phonemes, vocabulary, sentences (community data)
-- `research/` holds the reasoning; `sources/` holds Banks' essay and novel references
+- `research/` holds the reasoning; `sources/` holds a summary of Banks' essay (with archive links) and novel references
 - `tools/` holds generators; `themes/culture/` holds design tokens
 
 Key facts (know these cold):

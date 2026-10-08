@@ -10,7 +10,7 @@
 
 ## What Marain is
 
-Banks described Marain's writing system in a short companion essay, [*A Few Notes on Marain*](sources/a-few-notes-on-marain.md). Each symbol is a **3×3 grid of binary cells**, which makes it a 9-bit number. That gives 512 possible symbols, #0 to #511. Banks fixes only a handful of facts:
+Banks described Marain's writing system in a short companion essay, *A Few Notes on Marain* ([summary and archived copies](sources/a-few-notes-on-marain.md)). Each symbol is a **3×3 grid of binary cells**, which makes it a 9-bit number. That gives 512 possible symbols, #0 to #511. Banks fixes only a handful of facts:
 
 - the number 1 is glyph **#1**, a single filled cell in the top-left corner (his Figure 1)
 - the phoneme **/w/**, the first letter of the Marain alphabet, is glyph **#121**
@@ -29,7 +29,7 @@ That's close to the whole canon. Everything else in this repo is either a mathem
 | [`spec/`](spec/) | **The specification.** Grid and bit order, invariant glyphs, numerals, glyph table, the 16-bit packet, layout, rendering, display tokens, and the decision log. Start with [`spec/README.md`](spec/README.md). |
 | [`language/`](language/) | Phoneme inventory, a 430-word community vocabulary, example sentences (data from [Marain Tools](https://marain-tools.netlify.app/)). |
 | [`research/`](research/) | The reasoning behind the spec: linguistic relativity, Esperanto vs Hangul, Klingon, Sanskrit, CJK type design, reference fonts, prior art. |
-| [`sources/`](sources/) | Banks' essay and a curated list of novel references. |
+| [`sources/`](sources/) | A summary of Banks' essay (with links to archived copies), his figures, and a curated list of novel references. |
 | [`essays/`](essays/) | A four-part essay series written for a general audience. |
 | [`docs/`](docs/) | The [interactive glyph table](https://marainkit.github.io/marain/) (GitHub Pages). |
 | [`tools/`](tools/) | Scripts that generate the glyph table and PNGs, the font build, and a Claude Code skill. |
@@ -69,7 +69,7 @@ More in [`research/prior-art.md`](research/prior-art.md).
 
 ## Credits and rights
 
-- *A Few Notes on Marain* and its figures are © Iain M. Banks, reproduced for study.
+- *A Few Notes on Marain* is © Iain M. Banks. This repo summarises it and links to [archived copies](sources/a-few-notes-on-marain.md#reading-the-essay) rather than reproducing it. His figures are included for study.
 - Novel references are short quotations for commentary. Full-text extractions are kept out of the repo.
 - Marain Regular font © bianc0niglio, CC BY-SA 3.0 (`docs/marain-regular/`). Tom Cully's Marain font (© 2006, all rights reserved) is **not** redistributed here; the glyph table loads it directly from [his repository](https://github.com/tomdionysus/marain-font).
 - marainkit is a fan project with no affiliation to the Banks estate.
