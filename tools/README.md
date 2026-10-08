@@ -39,7 +39,7 @@ python3 tools/font/build.py
 
 Planned pipeline toward installable fonts: cell patterns → `build.py` → UFO (ufoLib2) → TTF/OTF (fonttools), mapped to the Private Use Area from U+E000, monospaced at 1000 units/em with roughly 200-unit cells.
 
-Third-party reference fonts go in `tools/font/examples/`, which is gitignored. The MarainBanks font (© Tom Cully, all rights reserved) belongs there or in `docs/marain-banks/` locally. It isn't distributed.
+Third-party reference fonts go in `tools/font/examples/`, which is gitignored. Tom Cully's Marain font (© all rights reserved; identical glyphs to the local `MarainBanks` copy) isn't distributed. `docs/index.html` loads it from [tomdionysus/marain-font](https://github.com/tomdionysus/marain-font).
 
 ## Claude Code skill — `skill/`
 

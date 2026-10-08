@@ -71,5 +71,5 @@ More in [`research/prior-art.md`](research/prior-art.md).
 
 - *A Few Notes on Marain* and its figures are © Iain M. Banks, reproduced for study.
 - Novel references are short quotations for commentary. Full-text extractions are kept out of the repo.
-- Marain Regular font © bianc0niglio, CC BY-SA 3.0 (`docs/marain-regular/`). The MarainBanks font is © Tom Cully, all rights reserved, and is **not** redistributed here.
+- Marain Regular font © bianc0niglio, CC BY-SA 3.0 (`docs/marain-regular/`). Tom Cully's Marain font (© 2006, all rights reserved) is **not** redistributed here; the glyph table loads it directly from [his repository](https://github.com/tomdionysus/marain-font).
 - marainkit is a fan project with no affiliation to the Banks estate.

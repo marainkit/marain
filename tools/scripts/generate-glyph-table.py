@@ -232,7 +232,7 @@ def generate_html(glyphs: list[dict]) -> str:
     <style>
       @font-face {
         font-family: "MarainBanks";
-        src: local("MarainBanks"), url("marain-banks/Marain-Banks.ttf") format("truetype");
+        src: local("MarainBanks"), url("https://raw.githubusercontent.com/tomdionysus/marain-font/master/Marain.ttf") format("truetype");
       }
       @font-face {
         font-family: "MarainRegular";
@@ -425,7 +425,7 @@ def generate_html(glyphs: list[dict]) -> str:
   <body>
     <h1>Marain — Glyph Table</h1>
     <p class="subtitle">
-      All assigned symbols in Marain — generated from spec/glyph-table.tsv
+      All assigned symbols in Marain — generated from spec/glyph-table.tsv — the “Banks” column uses <a href="https://github.com/tomdionysus/marain-font">Marain</a> © Tom Cully 2006, loaded from his repository
     </p>
     <div class="legend">
       <div class="leg">
