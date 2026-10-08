@@ -2,8 +2,6 @@
 
 A curated index of what the novels establish about Marain. Each entry paraphrases the passage and quotes only a short phrase where the wording matters. Look the passage up in your own copy for the full context.
 
-Full-text extractions produced by [`../tools/scripts/rag-extract.py`](../tools/scripts/rag-extract.py) live in `sources/novel-extractions/` on your machine. They're **gitignored** and not distributed.
-
 ---
 
 ## What the novels establish

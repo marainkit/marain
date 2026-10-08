@@ -1,6 +1,6 @@
-# *A Few Notes on Marain* — Iain M. Banks
+# A few notes on "A Few Notes on Marain"
 
-A short essay (about 800 words) in which Banks describes Marain's writing system. **This repo doesn't reproduce the text.** What follows is a summary in our own words, with very short quotations where the exact wording matters. Every `[canonical]` claim in the spec traces back to a point below.
+"A Few Notes on Marain" is a short essay (about 800 words) in which Banks describes Marain's writing system. **This repo doesn't reproduce the text.** What follows is a summary in our own words, with very short quotations where the exact wording matters. Every `[canonical]` claim in the spec traces back to a point below.
 
 **Date and venue:** unknown. Fan sites sometimes credit *Scripta Manent*, but nobody has confirmed it. Copies have circulated on fan and reference sites since at least 2002; the archived ones we know of are listed at the end.
 
@@ -36,13 +36,14 @@ Banks' own figures © Iain M. Banks, kept for study and reference.
 
 ---
 
-## Where copies have appeared
+## Reading the essay
 
-Every link below is an archived or third-party copy, and some are dead. Treat them as a trail to the essay, not as a source this project vouches for.
+Read it through the Internet Archive's Wayback Machine:
 
-- [Mostral (Web Archive)](http://homepages.compuserve.de/Mostral/artikel/marain.html), 2002
-- [Language Maker (Web Archive)](https://web.archive.org/web/20061117220107/http://www.langmaker.com/db/Marain), 2006
-- [The Culture Wiki](https://theculture.fandom.com/wiki/A_Few_Notes_on_Marain), 2011
-- [trevor-hopkins.com (Web Archive)](https://web.archive.org/web/20131029191550/http://trevor-hopkins.com/banks/a-few-notes-on-marain.html), 2013
-- [Hacker News discussion](https://news.ycombinator.com/item?id=18704377), 2018
-- [LibraryThing](https://www.librarything.com/work/23096751/t/A-Few-Notes-on-Marain-%5Bessay%5D), 2022
+- **trevor-hopkins.com** (captured 16 Dec 2025): <https://web.archive.org/web/20251216194409/https://trevor-hopkins.com/banks/a-few-notes-on-marain.html>
+- **Mostral**, a German fan site, online by 2002 (captured 24 May 2008): <https://web.archive.org/web/20080524200838/http://homepages.compuserve.de:80/Mostral/artikel/marain.html>
+- **Language Maker**, Marain entry (captured 28 Feb 2008): <https://web.archive.org/web/20080228001042/http://www.langmaker.com/db/Marain>
+
+To see every capture of a page, replace the timestamp with `*`, e.g. `https://web.archive.org/web/*/trevor-hopkins.com/banks/a-few-notes-on-marain.html`.
+
+Discussion and catalogue entries: [The Culture Wiki](https://theculture.fandom.com/wiki/A_Few_Notes_on_Marain) · [Hacker News](https://news.ycombinator.com/item?id=18704377) · [LibraryThing](https://www.librarything.com/work/23096751/t/A-Few-Notes-on-Marain-%5Bessay%5D)
